@@ -35,7 +35,7 @@ const correctAnswers = [
     "A e B",
     "Smartfit",
     "10 de agosto de 2025",
-    "Rep. Argentinaa",
+    "Rep. Argentina",
     "Bacon com cheddar e 4 queijos",
     "Chilano",
     "Milena"
