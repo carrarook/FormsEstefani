@@ -121,7 +121,7 @@ function displayResults() {
         popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.5)";
         popup.style.textAlign = "center";
         popup.innerHTML = `<p>Parabéns! Você acertou todas as perguntas! E ganhou o seguinte vale:</p>
-                           <img src="mnt/data/image.png" alt="Premio" style="max-width: 100%; height: auto;">
+                           <img src="Voucher.png" alt="Premio" style="max-width: 100%; height: auto;">
                            <button onclick="document.body.removeChild(this.parentElement)">Fechar</button>`;
         document.body.appendChild(popup);
     } else {
