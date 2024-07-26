@@ -131,5 +131,5 @@ function displayResults() {
     alert(resultMessage);
 }
 
-// Initialize the first question
+// forçando update do pages
 updateQuestion();
