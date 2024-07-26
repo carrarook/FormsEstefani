@@ -1,0 +1,108 @@
+/* Resetting some default browser styles */
+body, ul, li, p, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up a cute background color and font */
+body {
+    background-color: #fef6e4; /* light peach background */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: #ff69b4; /* hot pink text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling the main container */
+.campoCentral {
+    background-color: #fff0f5; /* lavender blush background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Styling the question */
+.pergunta p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Styling the options */
+.alternativas ul {
+    list-style-type: none;
+}
+
+.alternativas li {
+    background-color: #ffe4e1; /* misty rose background */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.alternativas li:hover {
+    background-color: #ffb6c1; /* light pink background */
+}
+
+/* Styling the button */
+form button {
+    background-color: #ff69b4; /* hot pink background */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #ff1493; /* deeper pink background */
+}
+
+/* Responsiveness for iPhone 11 */
+@media (max-width: 828px) {
+    .campoCentral {
+        padding: 15px;
+    }
+
+    .pergunta p {
+        font-size: 1.2em;
+    }
+
+    .alternativas li {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+/* Ensuring a good display on larger screens (e.g., 1920px width) */
+@media (min-width: 1200px) {
+    .campoCentral {
+        max-width: 500px;
+    }
+
+    .pergunta p {
+        font-size: 2em;
+    }
+
+    .alternativas li {
+        padding: 15px;
+    }
+
+    form button {
+        padding: 15px 30px;
+        font-size: 1.2em;
+    }
+}
