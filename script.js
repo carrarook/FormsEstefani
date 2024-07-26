@@ -48,15 +48,17 @@ document.getElementById("submitBtn").addEventListener("click", function() {
     if (questionIndex === questions.length - 1) {
         displayResults();
     } else {
-        questionIndex = (questionIndex + 1) % questions.length;
+        questionIndex++;
         updateQuestion();
     }
 });
 
 document.getElementById("backBtn").addEventListener("click", function() {
     saveSelectedAnswer();
-    questionIndex = (questionIndex - 1 + questions.length) % questions.length;
-    updateQuestion();
+    if (questionIndex > 0) {
+        questionIndex--;
+        updateQuestion();
+    }
 });
 
 function updateQuestion() {
@@ -84,9 +86,9 @@ function updateQuestion() {
     // Change button text on last question
     const submitBtn = document.getElementById("submitBtn");
     if (questionIndex === questions.length - 1) {
-        submitBtn.textContent = "Avançar";
-    } else {
         submitBtn.textContent = "Enviar";
+    } else {
+        submitBtn.textContent = "Avançar";
     }
 }
 
